@@ -6,7 +6,7 @@ class Rectangulo:
         self.base = base
         self.altura = altura
     def area(self):
-        return base * altura
+        return self.base * self.altura
 
-r = Rectangulo(3, 4)
-print(r.area())
+r = Rectangulo(10, 10)
+print(f"{r.area()} cm")
