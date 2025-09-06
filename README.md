@@ -1,6 +1,6 @@
 # Parcial Paradigmas 📝
 
-Este documento describe dos ejercicios realizados durante el parcial, uno de programación estructurada y otro de programación orientada a objetos.
+Este documento describe dos ejercicios realizados durante el parcial, uno de lenguajes de programación.
 
 ---
 
@@ -18,8 +18,6 @@ Este ejercicio modela figuras geométricas, con aplicaciones en diseño asistido
 
 En el método que calcula el área, originalmente se tenía la instrucción `return base * altura`. Sin embargo, las variables `base` y `altura` no estaban definidas dentro del método, por lo que el cálculo debía referirse a los atributos del objeto usando `self`. La línea corregida es `return self.base * self.altura` 🔧.
 
-Adicionalmente, para clarificar la unidad de medida del resultado, se agregó la indicación de centímetros en la impresión final, mostrando el área como `Área: <valor> cm²` 📏.
+Adicionalmente, para clarificar la unidad de medida del resultado, se agregó la indicación de centímetros en la impresión final, mostrando el área como `print(f"{r.area()} cm")` en lugar de `print(r.area())`.
 
 ---
-
-Si deseas más detalles o ayuda adicional con el código, estoy a tu disposición 🙌.
