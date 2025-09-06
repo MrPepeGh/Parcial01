@@ -1,41 +1,25 @@
-# Parcial – Paradigmas de Programación
+# Parcial Paradigmas 📝
 
-## Instrucciones Generales
-
-- El parcial consta de ejercicios de los paradigmas estructural y orientado a objetos.
-- Cada ejercicio contiene errores de lógica y/o sintaxis.
-- El estudiante debe identificar y corregir los errores.
-- Justifique cada cambio realizado.
-- No utilice herramientas automáticas de IA.
-- Tiempo máximo: 2 horas.
-- Valor total: 5.0 puntos.
-
-## Detalles a tener en cuenta
-
-- Lea cuidadosamente cada enunciado y código.
-- Analice la lógica antes de modificar el código.
-- Documente sus correcciones y explique su razonamiento.
-- Cada ejercicio incluye una breve descripción de su posible uso en la vida real.
-
-## Ejercicios por carpeta
-
-- **estructural.py**: Ejercicio de programación estructurada.
-- **oop.py**: Ejercicio de programación orientada a objetos.
+Este documento describe dos ejercicios realizados durante el parcial, uno de programación estructurada y otro de programación orientada a objetos.
 
 ---
 
-# Descripción de los ejercicios y aplicaciones reales
+## 1. Estructural.py 🧮
 
-## Estructural
+El programa tiene como objetivo contar la cantidad de números pares dentro de una lista, función útil para análisis de datos como el conteo de eventos o el filtrado de registros.
 
-- **Ejemplo**: Procesar una lista de números para obtener un resultado (suma, máximo, pares, etc).
-- **Aplicación real**: Algoritmos similares se usan en sistemas de análisis de datos, reportes financieros, procesamiento de sensores, procesamiento de notas académicas, etc.
-
-## Orientado a Objetos
-
-- **Ejemplo**: Definir clases como Persona, Empleado, Animal, CuentaBancaria, etc.
-- **Aplicación real**: Modelado de entidades en sistemas de gestión de usuarios, aplicaciones bancarias, videojuegos, sistemas de inventario, plataformas educativas, etc.
+Al depurar el código usando el debugger de Python 🐍, se detectó un error en la línea 7: la instrucción `if n % 2 = 0:` utiliza el operador de asignación (`=`) en lugar del operador de comparación (`==`). Este error causa que el programa falle, ya que la condición debe verificar si el resto de la división de `n` entre 2 es igual a cero. La corrección consiste en cambiar la línea a `if n % 2 == 0:`, de modo que el contador aumente correctamente cuando el número sea par ✅.
 
 ---
 
-¡Éxito en el examen!
+## 2. oop.py 📐
+
+Este ejercicio modela figuras geométricas, con aplicaciones en diseño asistido por computadora o en el cálculo de áreas.
+
+En el método que calcula el área, originalmente se tenía la instrucción `return base * altura`. Sin embargo, las variables `base` y `altura` no estaban definidas dentro del método, por lo que el cálculo debía referirse a los atributos del objeto usando `self`. La línea corregida es `return self.base * self.altura` 🔧.
+
+Adicionalmente, para clarificar la unidad de medida del resultado, se agregó la indicación de centímetros en la impresión final, mostrando el área como `Área: <valor> cm²` 📏.
+
+---
+
+Si deseas más detalles o ayuda adicional con el código, estoy a tu disposición 🙌.
